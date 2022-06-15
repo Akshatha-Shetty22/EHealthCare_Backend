@@ -21,7 +21,7 @@ namespace EHealthCare_API.Data
         {
             //optionsBuilder.UseSqlServer("Server=BSC-PG02TQPS\\SQLEXPRESS;Database=MedicineStoreDatabase;Trusted_Connection=True;MultipleActiveResultSets=true");
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Data Source = tcp:ehealthcare-apidbserver.database.windows.net,1433;Initial Catalog=EHealthCare_API_db;Persist Security Info = False;User Id=akshetty@ehealthcare-apidbserver;Password=admin@1234;MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False;Connection Timeout = 30;");
+            optionsBuilder.UseSqlServer("Data Source = tcp:ehealthcare-apidbserver.database.windows.net,1433;Initial Catalog=EHealthCare_API_db;Persist Security Info = False;User Id=(your username)@ehealthcare-apidbserver;Password=(your password);MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False;Connection Timeout = 30;");
         }
 
         public DbSet<User> Users { get; set; }
